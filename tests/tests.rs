@@ -9,11 +9,11 @@ mod tests {
 
     #[cfg(target_arch = "wasm32")]
     mod wasm_tests {
-        use super::{*, assert_eq};
+        use super::{assert_eq, *};
         use wasm_bindgen_test::{wasm_bindgen_test, wasm_bindgen_test_configure};
 
         wasm_bindgen_test_configure!(run_in_browser);
-    
+
         #[wasm_bindgen_test]
         fn test_add() {
             let result = add(2, 2);
@@ -23,7 +23,7 @@ mod tests {
 
     #[cfg(not(target_arch = "wasm32"))]
     mod native_tests {
-        use super::{*, assert_eq};
+        use super::{assert_eq, *};
 
         #[test]
         fn test_add() {
