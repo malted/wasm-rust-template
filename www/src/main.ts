@@ -1,6 +1,7 @@
 import "./style.css";
 import viteLogo from "/vite.svg";
 import typescriptLogo from "/typescript.svg";
+//@ts-ignore
 import { greet, double_count } from "wasm-rust-template";
 
 greet("Rustacean");
