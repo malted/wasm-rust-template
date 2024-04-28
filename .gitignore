@@ -5,3 +5,4 @@ pkg/
 .vite
 dist
 node_modules
+bun.lockb
