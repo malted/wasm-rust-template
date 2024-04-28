@@ -20,9 +20,10 @@ cargo build --target=wasm32-unknown-unknown && wasm-bindgen --out-dir ./pkg ./ta
 ```
 
 ## Running
-You can run this crate natively, by simply running `cargo run`. The entrypoint will be `src/main.rs`'s `fn main`  
+You can run this crate natively, by simply running `cargo run`. The entrypoint will be `src/main.rs:main`.  
 
-To run the WASM verson, first build it (as described above), and then run Vite to serve `www`.
+The WASM entrypoint will be `src/lib.rs:run`.
+To run it, first build it (as described above), and then run Vite to serve `www`.
 
 I quite like [Bun](https://bun.sh), so I run `bun --cwd www dev`. If you just want to use `npm`, run `cd www && npm run dev`.
 
