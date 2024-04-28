@@ -1,1 +1,7 @@
 /target
+Cargo.lock
+pkg/
+
+.vite
+dist
+node_modules
